@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITrace05" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which of these is &quot;coffee&quot;?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfD-Oi-cQn">
+                                <rect key="frame" x="40" y="99" width="279" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zpV-PC-CO9">
+                                <rect key="frame" x="30" y="140.5" width="354" height="620"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IUs-eM-usl">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="620"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jo3-wb-pXr">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="TMX-ty-AFa"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="Milk"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6Z-3V-qWY">
+                                                <rect key="frame" x="0.0" y="320" width="170" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="ZCv-hy-RX9"/>
+                                                    <constraint firstAttribute="height" constant="300" id="mEU-tf-oGz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="Water"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MMq-G8-Ry6">
+                                        <rect key="frame" x="190" y="0.0" width="164" height="620"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecd-ad-yE7">
+                                                <rect key="frame" x="0.0" y="0.0" width="164" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="xh5-ep-QEw"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="Bread"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSU-Gm-t8J">
+                                                <rect key="frame" x="0.0" y="320" width="164" height="300"/>
+                                                <state key="normal" title="Button" image="Coffee"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="MMq-G8-Ry6" secondAttribute="trailing" id="FYo-EC-LCL"/>
+                                    <constraint firstItem="IUs-eM-usl" firstAttribute="leading" secondItem="zpV-PC-CO9" secondAttribute="leading" id="Jz8-fr-JK9"/>
+                                    <constraint firstItem="MMq-G8-Ry6" firstAttribute="leading" secondItem="IUs-eM-usl" secondAttribute="trailing" constant="20" id="Yor-vN-Lgq"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zp-AK-0H8">
+                                <rect key="frame" x="30" y="780.5" width="354" height="32"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="CHECK">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW WORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3B3-RQ-fQV">
+                                <rect key="frame" x="40" y="64" width="99" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" red="0.76078431372549016" green="0.29803921568627451" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zpV-PC-CO9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2Ks-bv-2x6"/>
+                            <constraint firstItem="6zp-AK-0H8" firstAttribute="top" secondItem="zpV-PC-CO9" secondAttribute="bottom" constant="20" id="5qL-QZ-M2r"/>
+                            <constraint firstItem="pfD-Oi-cQn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="8bn-jG-A7H"/>
+                            <constraint firstItem="zpV-PC-CO9" firstAttribute="top" secondItem="pfD-Oi-cQn" secondAttribute="bottom" constant="15" id="EOd-pa-22L"/>
+                            <constraint firstItem="6zp-AK-0H8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="FG4-BA-PSG"/>
+                            <constraint firstItem="3B3-RQ-fQV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cj1-Ql-c6s"/>
+                            <constraint firstItem="pfD-Oi-cQn" firstAttribute="top" secondItem="3B3-RQ-fQV" secondAttribute="bottom" constant="15" id="hLO-pr-Nw1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zpV-PC-CO9" secondAttribute="trailing" constant="30" id="md9-Th-sCh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6zp-AK-0H8" secondAttribute="trailing" constant="30" id="tEC-bq-xAg"/>
+                            <constraint firstItem="3B3-RQ-fQV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="zr7-b9-chu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Check" destination="6zp-AK-0H8" id="v8a-0e-rAm"/>
+                        <outlet property="button1" destination="jo3-wb-pXr" id="EBG-om-0Xm"/>
+                        <outlet property="button2" destination="Ecd-ad-yE7" id="JOs-R2-ZTv"/>
+                        <outlet property="button3" destination="e6Z-3V-qWY" id="HUb-to-oBw"/>
+                        <outlet property="button4" destination="RSU-Gm-t8J" id="Vdq-aV-Ayq"/>
+                        <outlet property="newWord" destination="3B3-RQ-fQV" id="T3m-a3-Yuo"/>
+                        <outlet property="question" destination="pfD-Oi-cQn" id="ozm-Np-vT2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bread" width="200" height="300"/>
+        <image name="Coffee" width="200" height="300"/>
+        <image name="Milk" width="200" height="300"/>
+        <image name="Water" width="200" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
